@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(50, 50, 50);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Helvetica&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Actor switch&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>321</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="All_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>All</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Skull_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Skull</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>0</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Skull_part_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Skull_part</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>0</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Brain_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Brain</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_3">
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>0</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Target_button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Target</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Transducer</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Analysis_range_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Analysis_range</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Center_line_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Center line</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="First_beam_lines_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>First beam lines</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Final_beam_lines_Button_2">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Out intersection vector</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Second_beam_lines_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Second beam lines</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Final_beam_lines_Button_3">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>In intersection vector</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Final_beam_lines_Button">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Final beam lines</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>All_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>All()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Skull_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Skull()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Skull_part_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Skull_Part()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Brain_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Brain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Target_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Target()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Transducer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Analysis_range_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Analysis_range()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Center_line_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Center_line()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>508</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>First_beam_lines_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>First_beam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>528</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Second_beam_lines_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Second_beam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>622</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>581</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Final_beam_lines_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Final_beam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>698</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Final_beam_lines_Button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>out_vector()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>574</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>15</x>
+     <y>594</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Final_beam_lines_Button_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>in_vector()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>658</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>19</x>
+     <y>664</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Transducer()</slot>
+  <slot>All()</slot>
+  <slot>Skull()</slot>
+  <slot>Skull_Part()</slot>
+  <slot>Brain()</slot>
+  <slot>Target()</slot>
+  <slot>Analysis_range()</slot>
+  <slot>Center_line()</slot>
+  <slot>First_beam()</slot>
+  <slot>Second_beam()</slot>
+  <slot>Final_beam()</slot>
+  <slot>out_vector()</slot>
+  <slot>in_vector()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,8 @@
+ERROR: In ..\Common\DataModel\vtkPointLocator.cxx, line 867
+vtkPointLocator (0000028243BCE470): No points to subdivide
+
+
+Generic Warning: In ..\Filters\General\vtkIntersectionPolyDataFilter.cxx, line 2535
+No Intersection between objects 
+
+
